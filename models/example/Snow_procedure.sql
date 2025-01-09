@@ -56,9 +56,9 @@ create or replace procedure purge_inactive_customer()
        sqlText: "delete from customer_dts where cust_status = 'Inactive';"
        });
        return 'Inactive customers purged';
-       $$;
+       $$
 
-call purge_inactive_customer();       
+--call purge_inactive_customer();       
 
 /*
 CREATE OR REPLACE PROCEDURE purge_inactive_customer()
